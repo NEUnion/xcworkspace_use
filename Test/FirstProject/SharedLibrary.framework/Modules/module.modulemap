@@ -1,0 +1,11 @@
+framework module SharedLibrary {
+  umbrella header "SharedLibrary.h"
+
+  export *
+  module * { export * }
+}
+
+module SharedLibrary.Swift {
+    header "SharedLibrary-Swift.h"
+    requires objc
+}
